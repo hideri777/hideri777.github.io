@@ -1,8 +1,46 @@
-/* 全体レイアウト */
+/* ヘルパー */
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    border-radius: 20px;
+    margin: 1rem 0;
+}
+
+/* レイアウト */
 #layout, #nav, #list, #main {
     margin: 0;
     padding:0;
 }
+
+/* ナビゲーション */
+/* TODO: スマホの時の挙動追加 */
+#nav {
+    background: rgb(37, 42, 58);
+    text-align: center;
+}
+
+.nav-inner {
+    padding: 2em 0;
+}
+
+#nav .pure-menu {
+    text-align: left;
+}
+
+#nav .pure-menu-link:hover,
+#nav .pure-menu-link:focus {
+    background: rgb(55, 60, 90);
+}
+
+#nav .pure-menu-link {
+    color: #fff;
+    margin-left: 0.5rem;
+}
+/* ナビゲーション */
+
+/* emailのところ */
+
+
 
 /* 個別パーツ用 */
 .email-item {
