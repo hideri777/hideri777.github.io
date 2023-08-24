@@ -1,0 +1,67 @@
+/* 全体レイアウト */
+#layout, #nav, #list, #main {
+    margin: 0;
+    padding:0;
+}
+
+/* 個別パーツ用 */
+.email-item {
+    padding: 0.9rem 1rem;
+}
+
+.email-avatar {
+    margin-right: 10px;
+}
+
+.email-name, .email-subject {
+    margin: 0;
+}
+
+/* メディアクエリ タブレット */
+@media (min-width: 40rem) {
+    #layout {
+        padding-left: 500px;
+        position: relative;
+    }
+
+    #nav, #list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+
+    #nav {
+        margin-left: -500px;
+        width: 150px;
+    }
+
+    #list {
+        margin-left: -350px;
+        height: 33%;
+    }
+
+    #main {
+        position:fixed;
+        top: 33%;
+        bottom: 0;
+        right: 0;
+        left: 150px;
+        overflow: auto;
+        width: auto;
+    }
+}
+
+/* メディアクエリ pc */
+@media (min-width: 60rem) {
+    #list {
+        width: 350px;
+        height: 100%;
+    }
+
+    #main {
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+}
